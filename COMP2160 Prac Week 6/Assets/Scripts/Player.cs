@@ -25,7 +25,6 @@ public class Player : MonoBehaviour
     private float dyingTimer = 0;
 
     [SerializeField] private SpriteRenderer sprite;
-
     private Backdrop backdrop;
 
     private Vector3 velocity;
@@ -42,7 +41,6 @@ public class Player : MonoBehaviour
         movementAction = playerActions.Plane.Movement;
         fireAction = playerActions.Plane.Fire;
         bombAction = playerActions.Plane.Bomb;
-
     }
 
     void OnEnable()
@@ -115,7 +113,7 @@ public class Player : MonoBehaviour
         if (fireButton > 0 && gunTimer <= 0)
         {
             gunTimer += gunCooldown;
-            Bullet bullet = Instantiate(bulletPrefab);
+            Bullet bullet = Instantiate(bulletPrefab, transform);
             bullet.transform.position = gun.position;
         }        
     }
@@ -127,7 +125,7 @@ public class Player : MonoBehaviour
         if (bombButton > 0 && bombTimer <= 0)
         {
             bombTimer += bombCooldown;
-            Bomb bomb = Instantiate(bombPrefab);
+            Bomb bomb = Instantiate(bombPrefab, transform);
             bomb.transform.position = drop.position;
 
             // add the base speed
