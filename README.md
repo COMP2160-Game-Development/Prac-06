@@ -10,11 +10,11 @@
 
 ## Today's Task
 In this prac you will be conducting Quality Assurance testing on an arcade game:
-https://wordsonplay.itch.io/comp2160-prac-6
 
 ![A screenshot of the finished game](images/Week6_finalgame.png)
  
 Use the arrow keys to move the ship. Press X to fire the forwards gun and Z to drop a bomb. Your goal is to destroy the reactor at the end of the level.
+
 The Unity project implements the entire game for you, but it contains several bugs. It is your job to conduct QA testing. 
 
 ### Documentation
@@ -92,7 +92,7 @@ You should test compatibility across at least four different platforms, recordin
 * Any notes on performance compatibility (is everything working as expected?)
 * Any additional compatibility notes not covered by the other two sections
 
-You may use your own device to do this, and include the sample solution provided as one test build.
+You may use your own device to do this, or simply focus on web builds in different browsers.
 
 You can find the specifications of the computer you are on by clicking:
 
